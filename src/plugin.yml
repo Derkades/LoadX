@@ -1,0 +1,18 @@
+name: LoadX
+main: xyz.derkades.loadx.Main
+version: 1.0.0
+author: Derkades
+description: Plugin for automatically loading chunks
+
+commands:
+  generate:
+    aliases: [load, loadchunks, generatechunks, autogenerate, autoload, loadx]
+    description: Automatically teleports the player to generate chunks.
+    usage: |
+      /generate <blocks> <interval>
+      
+      Blocks -  The amount of blocks in x and z direction you want to generate, for example:
+      blocks = 2000 will generate to x=-2000, x=2000, z=-2000, z=2000
+      
+      Interval - Interval between teleports, in ticks. If you don't know what to put here, put 10. 
+      If chunk loading can't keep up with you being teleported, set this to a higher value.
